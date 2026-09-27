@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leo-satellite-constellation-kernel"
+version = "0.1.0"
+description = "Algorithmic Solvers for LEO Satellite Megaconstellations, Laser Cross-Links, Beam Hopping, and Orbital Mechanics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "DeepMind & Antigravity Advanced Agentic Systems" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: System :: Networking",
+]
+dependencies = []
+
+[project.scripts]
+satellite-kernel = "leo_satellite_constellation_kernel.cli:main"
